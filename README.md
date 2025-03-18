@@ -1,6 +1,6 @@
 # ChatPhoenix Application
 
-This README provides instructions on how to set up and run the ChatPhoenix application on your local machine.
+This README provides instructions on how to set up and run the RealTime Chat application on your local machine.
 
 ## Prerequisites
 
