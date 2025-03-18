@@ -1,18 +1,65 @@
-# Chat
+# ChatPhoenix Application
 
-To start your Phoenix server:
+This README provides instructions on how to set up and run the ChatPhoenix application on your local machine.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Prerequisites
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+* Elixir (~> 1.14)
+* Erlang (~> 25.0)
+* Phoenix (~> 1.7)
+* PostgreSQL
+* Node.js (~> 14.0 or newer)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Installation
 
-## Learn more
+1. Clone the repository:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```bash
+git clone https://github.com/thotenn/phx.chat.git
+cd chat
+```
+
+2. Install dependencies:
+
+```bash
+mix deps.get
+```
+
+3. Install Node.js dependencies:
+
+```bash
+cd assets && npm install && cd ..
+```
+
+## Database Setup
+
+1. Create and migrate the database:
+
+```bash
+mix ecto.create
+mix ecto.migrate
+```
+
+## Running the Application
+
+1. Start the Phoenix server:
+
+```bash
+mix phx.server
+```
+
+Alternatively, you can run the application in interactive mode:
+
+```bash
+iex -S mix phx.server
+```
+
+2. Visit [`localhost:4042`](http://localhost:4042) in your browser to see the application running.
+
+## Learn More
+
+* Official website: https://www.phoenixframework.org/
+* Guides: https://hexdocs.pm/phoenix/overview.html
+* Docs: https://hexdocs.pm/phoenix
+* Forum: https://elixirforum.com/c/phoenix-forum
+* Source: https://github.com/phoenixframework/phoenix
